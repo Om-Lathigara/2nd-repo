@@ -1,1 +1,75 @@
-hello
+#include<stdio.h>
+main()
+{
+    int n,m,p,q,j=1,i=1,a[3][3],b[3][3],c[3][3];
+    printf("enter m = ");
+    scanf("%d",&m);
+    printf("enter n = ");
+    scanf("%d",&n);
+
+    printf("enter p = ");
+    scanf("%d",&p);
+
+    printf("enter q = ");
+    scanf("%d",&q);
+    if(m!=p || n!=q)
+    {
+        printf("noooo");
+    }
+    else
+    {
+    for(i=0;i<m;i++)
+    {
+        for(j=0;j<n;j++)
+        {
+            printf("a[%d][%d]=",i,j);
+            scanf("%d",&a[i][j]);
+        }
+    }
+    printf("\n");
+
+    for(i=0;i<p;i++)
+    {
+        for(j=0;j<q;j++)
+        {
+            printf("b[%d][%d]=",i,j);
+            scanf("%d",&b[i][j]);
+        }
+    }
+    printf("\n");
+     printf("Matrix A is :");
+    for(i=0;i<m;i++)
+    {
+        for(j=0;j<n;j++)
+        {
+
+            printf("%4d",a[i][j]);
+        }
+        printf("\n");
+    }
+    printf("\n");
+    printf("Matrix B is :");
+    for(i=0;i<m;i++)
+    {
+        for(j=0;j<n;j++)
+        {
+            printf("%4d",b[i][j]);
+        }
+        printf("\n");
+    }
+    printf("\n");
+    printf("Addition of matrix :");
+     for(i=0;i<m;i++)
+    {
+        for(j=0;j<n;j++)
+        {
+            c[i][j]=a[i][j]+b[i][j];
+            printf("%4d",c[i][j]);
+
+        }
+        printf("\n");
+    }
+    }
+}
+
+
